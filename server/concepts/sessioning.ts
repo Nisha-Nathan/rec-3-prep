@@ -43,7 +43,7 @@ export default class SessioningConcept {
       throw new UnauthenticatedError("Must be logged in!");
     }
   }
-  
+
   isAlreadyLoggedIn(session: SessionDoc) {
     if (session.user !== undefined) {
       throw new UnauthenticatedError("User already logged in");
